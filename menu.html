@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Tasty Bites</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Tasty Bites</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/menu.html" class="active">Menu</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/cart.html" class="cart-link">Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="menu-page">
+        <div class="container">
+            <div class="menu-filters">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search menu items...">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="pizza">Pizza</button>
+                    <button class="filter-btn" data-category="burger">Burgers</button>
+                    <button class="filter-btn" data-category="sushi">Sushi</button>
+                    <button class="filter-btn" data-category="dessert">Desserts</button>
+                    
+                </div>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tasty Bites</h3>
+                    <p>Delivering happiness, one meal at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="/menu.html">Menu</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@tastybites.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/menu.js"></script>
+</body>
+</html>
